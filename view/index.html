@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/app.js"></script>
+    <title>Моє портфоліо</title>
+</head>
+
+<body>
+    <div class="container" id="photo">
+        <div class="me"></div>
+        <div class="middle">
+            <button onclick="showContent()" class="text italic-text pointer" id="button">Маленька дівчинка з великим потенціалом!</button>
+        </div>
+    </div>
+
+    <div class="hidden" id="content">
+        <div class="header">
+            <ul class="nav">
+                <li>
+                    <a href="#photo"><span class="bold-text name">ГРИНИК<br>НАТАЛЯ</span></a>
+                </li>
+                <li>
+                    <a href="#education">Освіта</a>
+                </li>
+                <li>
+                    <a href="#achievements">Досягнення</a>
+                </li>
+                <li>
+                    <a href="#skills">Сильні сторони</a>
+                </li>
+                <li>
+                    <a href="#personal">Особисте</a>
+                </li>
+                <li>
+                    <a href="#contacts">Зворотний зв'язок</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="colors">
+            <div id="main" class="main">
+
+                <div id="education" class="block">
+                    <h2>Освіта</h2>
+                    <ul class="education-list">
+                        <li>
+                            <span class="bold-text">2007-2018</span> - Заболотівська гімназія
+                        </li>
+                        <li>
+                            <span class="bold-text">2018-2022</span> - Львівський національний університет імені Івана Франка
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="achievements" class="block">
+                    <h2>Чого хочу досягнути:</h2>
+                    <ul class="achievements-list">
+                        <li>
+                            Хочу освоїти всі необхідні інструменти для створення конкурентноспроможних сайтів.
+                        </li>
+                        <li>
+                            Хочу знайти роботу в цій сфері, щоб втілювати свої крейзі ідеї і постійно розвиватись.
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="skills" class="block">
+                    <h2>Сильні сторони:</h2>
+                    <ul class="skills-list">
+                        <li>
+                            <span class="fa star"></span>Цілеспрямована
+                        </li>
+                        <li>
+                            <span class="fa star"></span>Не боюсь змін
+                        </li>
+                        <li>
+                            <span class="fa star"></span>Швидко навчаюсь
+                        </li>
+                        <li>
+                            <span class="fa star"></span>Весела
+                        </li>
+                        <li>
+                            <span class="fa star"></span>Відповідальна
+                        </li>
+                        <li>
+                            <span class="fa star"></span>Творчо підходжу до справи
+                        </li>
+                        <li>
+                            <span class="fa star"></span>Емпатійна
+                        </li>
+                        <li>
+                            <span class="fa star"></span>Завжди готова прийти на допомогу
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="quotation-bg">
+                <div class="quotation-block">
+                    <p class="text-italic text-center">"Якщо чогось хочеш - роби! Не можеш - навчись!<br>
+                    Але якщо не хочеш навчитись, значить не дуже<br>
+                    ти цього й прагнув"</p>
+                    <p class="text-italic text-right"> "Таємниця старого лами"<br>Дорж Бату</p>
+                </div>
+            </div>
+
+            <div class="main">
+                <div id="personal" class="block">
+                    <h2>Особисте</h2>
+                    <ul class="personal-list">
+                        <li>
+                            Обожнюю тваринок, тому дома маю котика Рорі.
+                        </li>
+                        <li>
+                            Люблю активний спосіб життя: спорт (волейбол, бадмінтон, біг, гімнастика), довгі прогулянки та подорожі!
+                        </li>
+                        <li>
+                            Надзвичайно сильно люблю фотографувати природу, а особливо прекрасні заходи сонця у Львові.
+                        </li>
+                        <li>
+                            Вважаю, що людина повинна розвиватись все своє життя і не боятись змін.
+                        </li>
+                        <li>
+                           Коли маю вільний час, то люблю читати книжки.
+                        </li>
+
+                    </ul>
+
+                    <div class="personal-images-block">
+                        <img class="personal-image" src="../images/nature.jpg" alt="Природа">
+                        <img class="personal-image" src="../images/books.jpg" alt="Книги">
+                        <img class="personal-image" src="../images/Rori.jpg" alt="Мій кіт">
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h2>Зворотний зв'язок</h2>
+                    <form action="#" method="post" id="contacts" class="form-style">
+                        <!--suppress HtmlFormInputWithoutLabel -->
+                        <input type="text" name="fname" placeholder="Введіть Ваше ім'я">
+                        <!--suppress HtmlFormInputWithoutLabel -->
+                        <input type="text" name="lname" placeholder="Введіть Ваше прізвище">
+                        <!--suppress HtmlFormInputWithoutLabel -->
+                        <input type="email" name="email" placeholder="Введіть Вашу пошту">
+                        <!--suppress HtmlFormInputWithoutLabel -->
+                        <textarea name="message" class="form-textarea" placeholder="Введіть Ваше повідомлення"></textarea>
+                        <input type="submit" class="form-submit" value="Надіслати">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

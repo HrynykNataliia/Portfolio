@@ -1,0 +1,222 @@
+.me{
+    background-size: cover;
+    background-image: url("../images/me.jpg");
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+body, html, p, span{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+}
+p, li, input, textarea{
+    font-family: "PT Sans", sans-serif;
+    font-size: 23px;
+    line-height: 1.5;
+}
+.personal-image{
+    border: 3px solid #2B993F;
+    border-radius: 50%;
+    margin: 0;
+    width: 20vw;
+}
+.container{
+    position: relative;
+}
+.middle {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .me {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.text {
+    background-color: #2B993F;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 16px 32px;
+    font-family: "Open Sans", sans-serif;
+    text-align-last: center;
+    text-align: justify;
+}
+.italic-text{
+    font-style: italic;
+}
+.bold-text{
+    font-weight:bold;
+}
+.name{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 1px;
+}
+.colors{
+    background-color: black;
+    color: white;
+}
+.main{
+    width: 65vw;
+    margin: auto;
+}
+.nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav li{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+}
+.nav li:hover{
+    opacity: 0.6;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100vw;
+    background-color: #2B993F;
+}
+.education-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.personal-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.personal-list li{
+    background: url("../images/pointer1.svg") no-repeat left center;
+    padding-left: 70px;
+    min-height: 70px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.achievements-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.achievements-list li{
+    background: url("../images/pointer2.svg") no-repeat left center;
+    padding-left: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+.skills-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    column-count: 2;
+}
+.quotation-bg{
+    background-image: url("../images/quotation-background.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.text-italic{
+    font-style: italic;
+}
+.quotation-block{
+    width: 50vw;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.personal-images-block{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.block{
+    padding-top: 55px;
+    padding-bottom: 10px;
+}
+.form-style{
+    display: flex;
+    flex-direction: column;
+}
+.form-style input, .form-style textarea{
+    background-color: black;
+    border: 2px solid white;
+    color: #2B993F;
+    padding: 15px;
+    margin: 15px;
+    outline: none;
+}
+.form-textarea{
+    height: 100px;
+}
+.form-submit{
+    width: 300px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.form-style ::placeholder{
+    color: dimgray;
+}
+.skills-list .star{
+    color: #36C951;
+    font-size: 64px;
+    margin-right: 5px;
+}
+.skills-list li{
+    min-height: 70px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.hidden{
+    display: none!important;
+}
+.pointer{
+    cursor: pointer;
+}
